@@ -3,19 +3,32 @@
     <title>Elderly friendly websites</title>
     <style>
         body {
-            background-color:orange;
+            background-color:rgb(39, 38, 39);
             margin: 0;
             width: 100%;
             height:100vh;
             background-image:repeating-linear-gradient(
-                black,
-                black 20px,
+                45deg,
+                orange,
+                orange 20px,
                 transparent 20px,
                 transparent 50px,
-                black 50px,
-                black 80px
+                orange 50px,
+                orange 80px
             );
+        background-size:400%;
+        animation: anim 30s linear infinite;
         }
+
+        @keyframes anim {
+            0% {
+                background-position: left;
+            }
+            100% {
+                background-position: right;
+            }
+        }
+
 
         h1 {
             color: black;
@@ -60,7 +73,7 @@
 </head>
 <body>
 
-<h1 style="font-weight: bold;font-color : black;font-family:verdana;Elderly useful links">Elderly Friendly Website</h1>
+<h1 style="font-weight: bold;font-color :black;font-family:verdana;Elderly useful links">Elderly Friendly Website</h1>
 <main class="spacing">
     <div id="sudoku" class="lingaguliguliguli">
         <a href="https://sudoku.com">
